@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/TextViewInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="IT SECURITY:Answer All Questions"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/TextViewquestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="1. Which one of the following cannot lead to the spread of a malicious program?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <CheckBox android:id="@+id/checkbox_1A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Using only software that has been checked for viruses."
+            android:layout_margin="8dp"
+            android:onClick="onCheckBoxClicked1"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_1B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Maintaining regularly updated anti-virus software."
+            android:onClick="onCheckBoxClicked1"/>
+        <CheckBox
+            android:id="@+id/checkbox_1C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Opening only virus-checked file attachments from known sources."
+            android:onClick="onCheckBoxClicked1"/>
+        <CheckBox
+            android:id="@+id/checkbox_1D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Using a USB Flash Drive from an unknown source to exchange data."
+            android:onClick="onCheckBoxClicked1"/>
+
+        <TextView
+            android:id="@+id/TextViewquestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="2. Which one of the following ensures that anti-virus software is effective?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup2">
+
+            <RadioButton
+                android:id="@+id/radio_2A"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  Restricting computer access to known users"
+                android:layout_marginTop="10dp"
+
+                android:onClick="onRadioButtonClicked2"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Paying for the latest version of Windows"
+                android:layout_marginTop="20dp"
+
+                android:onClick="onRadioButtonClicked2"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_2C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Updating the anti-virus software regularly"
+                android:layout_marginTop="20dp"
+
+                android:onClick="onRadioButtonClicked2"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_2D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Installing anti-spam software"
+                android:layout_marginTop="20dp"
+
+                android:onClick="onRadioButtonClicked2"
+                android:textSize="12sp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/TextViewquestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="3. Which one of the following can protect a computer from the risk of unwanted emails?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup3">
+
+            <RadioButton
+                android:id="@+id/radio_3A"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  Anti-spam software."
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked3"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Anti-virus software."
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked3"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_3C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Anti-spyware software."
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked3"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_3D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   PC diagnostic software."
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked3"
+                android:textSize="12sp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/TextViewquestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="4. Which one of the following should be used to change your password?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup4">
+
+            <RadioButton
+                android:id="@+id/radio_4A"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  Control Panel."
+                android:layout_marginTop="10dp"
+                android:onClick="onRadioButtonClicked4"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_4B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Anti-virus software."
+                android:layout_marginTop="20dp"
+                android:onClick="onRadioButtonClicked4"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_4C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    Windows Firewall."
+                android:layout_marginTop="20dp"
+                android:onClick="onRadioButtonClicked2"
+
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/radio_4D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Internet Explorer."
+                android:layout_marginTop="20dp"
+                android:onClick="onRadioButtonClicked4"
+
+                android:textSize="12sp" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:onClick="scoresGotten"
+            android:text="Submit" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:onClick="onReset"
+            android:text="Reset" />
+        <TextView
+            android:id="@+id/totalSores_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Total Score"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>
